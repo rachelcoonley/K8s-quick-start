@@ -123,7 +123,7 @@ After you add at least one host to your environment, it might take several minut
 
 ### Adding Containers
 
-Once you've verified that all system services are up and running, you're ready to create your first container. To do so, create a pod and then add services to it. A `pod` is one or more containers in Kubernetes.
+Once you've verified that all system services are up and running, you're ready to create your first container. In Kubernetes, one or more containers is a `pod`.
 
 The process for adding a container differs depending on your container orchestration type. The Rancher UI provides three methods for using Kubernetes. Please refer to Kubernetes' [Overview of kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) for more details.
 
