@@ -54,22 +54,14 @@ It only takes one command and a few minutes to install and launch Rancher Server
 
 Rancher supports grouping resources into multiple [environments]({{site.baseurl}}/rancher/{{page.version}}/{{page.lang}}/concepts/environments/). Each environment starts with an [environment template]({{site.baseurl}}/rancher/{{page.version}}/{{page.lang}}/concepts/environment-template) to define its set of [infrastructure services]({{site.baseurl}}/rancher/{{page.version}}/{{page.lang}}/concepts/infra-services/), and one or more users or groups own it.
 
-In addition to Docker Swarm, Kubernetes, and Mesos, Rancher supports its own container orchestration and scheduling framework called **Cattle**. Rancher uses Cattle extensively to orchestrate infrastructure services, as well as to set up, manage, and upgrade Swarm, Kubernetes, and Mesos clusters.
-
 Initially, Rancher creates a **Default** Cattle environment for you. To deploy Kubernetes in Rancher, you’ll need to configure an environment template and then add the environment to Rancher.
 
 #### To Create a Kubernetes Environment in Rancher:
 
 1. From the **Environment** UI menu, select **Manage Environments**.
-2. In **Kubernetes** row of the **Environment Templates** section, click **Edit**.
-3. In the **Orchestration** section of the template, click **Edit Config**.
-4. Select the version of the template you want to configure, and then enter a **Name** (required) and a **Description** (optional).
-5. Adjust the **Configuration Options**, such as RBAC, plane isolation, cloud providers, backups, and add-ons.
-6. Click **Configure**, and then click **Save**.
-7. From the **Environment** UI menu, select **Manage Environments**.
-8. Click **Add Environment**, enter a **Name** (required) and a **Description** (optional).
-9. Select your template, and then click **Create**.
-10. From the **Environment** UI menu, select your Kubernetes environment. A `Setting up Kubernetes...` message displays and prompts you to add at least one host.
+2. Click **Add Environment**, enter a **Name** (required) and a **Description** (optional).
+3. Select your template, and then click **Create**.
+4. From the **Environment** UI menu, select your Kubernetes environment. A `Setting up Kubernetes...` message displays and prompts you to add at least one host.
 
 If you configured access control, you can add members to this environment and select their membership roles on the **Manage Environments** page. You can access this new environment from the **Environment** UI menu, or by clicking **Kubernetes > Switch to this Environment**.
 
@@ -119,7 +111,7 @@ If you're adding a custom host, note these requirements:
 5. Copy, paste, and run the Docker command on your host to register it with Rancher. This process might take a few minutes to complete.
 6. Click **Close**. On the Hosts page, you can view the status of your host.
 
-After you add at least one host to your environment, it might take several minutes for all Rancher system services to launch. To verify the status of your environment, from the **Environment** menu, select **Manage Environments**. If a service is healthy, its state displays in green.
+[NEED TO VERIFY THIS INFO:] After you add at least one host to your environment, it might take several minutes for all Rancher system services to launch. To verify the status of your environment, from the **Environment** menu, select **Manage Environments**. If a service is healthy, its state displays in green.
 
 ### Adding Containers
 
