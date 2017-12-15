@@ -69,7 +69,7 @@ You can access this new environment from the **Environment** menu. If you config
 
 The process of adding hosts is the same steps for all container orchestration types, including Cattle and Kubernetes. For Kubernetes, adding your first host deploys infrastructure services, including Kubernetes services like master, kubelet, etcd, and proxy. You can see the progress of the deployment by accessing the **Kubernetes > Infrastructure Stacks** menu.
 
-You can either add a host from a cloud provider that Rancher v1.6 supports, or you can add a custom host. If you don't see your cloud provider in the UI, don't worry. Simply use the `Custom` host option, which is selected by default. It provides the Docker command to launch the Rancher agent container. Rancher uses Docker Machine to launch hosts for the other cloud providers.
+You can either add a custom host or a host from a cloud provider that Rancher v1.6 supports. If you don't see your cloud provider in the UI, don't worry. Simply use the `Custom` host option, which is selected by default. It provides the Docker command to launch the Rancher agent container. Rancher uses Docker Machine to launch hosts for the other cloud providers.
 
 Hosts you plan to use as Kubernetes nodes require the following TCP ports open for `kubectl`: `10250` and `10255`. 
 
