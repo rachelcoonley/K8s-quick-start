@@ -44,7 +44,7 @@ It only takes one command and a few minutes to install and launch Rancher Server
    ```
    After launching the container, we'll tail the logs of the container to see when the server is up and running. When the Rancher UI is ready, a `Startup Succeeded, Listening on port` message displays. This process might take several minutes to complete.
 
-2. To access the Rancher UI, go to `http://<SERVER_IP>:8080`, replacing `<SERVER_IP>` with the IP address of your host. The UI displays a Welcome to Rancher page.
+2. To access the Rancher UI, go to `http://<SERVER_IP>:8080`, replacing `<SERVER_IP>` with the IP address of your host. The UI displays a Welcome to Rancher message.
 
    > **Note:** If you are running your browser on the same host running Rancher Server, you will need to use the host’s real IP address, such as `http://192.168.1.100:8080,` and not `http://localhost:8080` or `http://127.0.0.1:8080`.
 
