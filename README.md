@@ -63,7 +63,7 @@ Initially, Rancher creates a **Default** Cattle environment for you. To deploy K
 3. Select the Kubernetes template, and then click **Create**.
 4. From the **Environment** menu, select your Kubernetes environment. A `Setting up Kubernetes` message displays and prompts you to add at least one host.
 
-If you configured access control, you can add members to this environment and select their membership roles on the **Manage Environments** page. You can access this new environment from the **Environment** menu.
+You can access this new environment from the **Environment** menu. If you configured access control, you can add members to this environment and select their membership roles on the **Manage Environments** page. 
 
 ### Adding Hosts
 
