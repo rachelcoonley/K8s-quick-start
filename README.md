@@ -86,16 +86,17 @@ If you're adding a custom host, note these requirements:
 1. From the **Infrastructure** menu, select **Hosts**. The Hosts page displays.
 2. Click **Add Host**.
 3. Enter your **Host Registration URL**, and click **Save**. This URL is where Rancher Server is running, and it must be reachable from any hosts you add. The Add Host page displays.
-4. Select **Custom**. A Docker command displays. For example:
+4. Select **Custom**. 
+5. If you need to specify the agent IP address, you can enter it in the field.
+6. To register your host with Rancher, copy the Docker command from the UI and then run it on your host. This process might take a few minutes to complete. For example:
    ```bash
    sudo docker run --rm --privileged -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/rancher:/var/lib/rancher rancher/agent:v1.6
    http://<SERVER_IP>:8080/v3/scripts/D5433C26EC51325F9D98:1483142400000:KvILQKwz1N2MpOkOiIvGYKKGdE
    ```
-
-   >**Note:** The IP address in the command must match your `<SERVER_IP>` and must be reachable from inside your host.
-
-5. Copy, paste, and run the Docker command on your host to register it with Rancher. This process might take a few minutes to complete.
-6. Click **Close**. On the Hosts page, you can view the status of your host.  
+   
+   >**Note:** The IP address in the command must match your `<SERVER_IP>` and it must be reachable from inside your host.
+    
+7. Click **Close**. On the Hosts page, you can view the status of your host.
 
 #### To Add a Host from a Cloud Provider:
 
