@@ -101,7 +101,7 @@ If you're adding a custom host, note these requirements:
 
 1. From the **Infrastructure** menu, select **Hosts**. The Hosts page displays.
 2. Click **Add Host**.
-3. Enter your **Host Registration URL**, and click **Save**. This URL is where Rancher Server is running, and it must be reachable from any hosts you add. Ignore any warnings for now. The Add Host page displays.
+3. Enter your **Host Registration URL**, and click **Save**. This URL is where Rancher Server is running, and it must be reachable from any hosts you add. The Add Host page displays.
 4. Select your cloud provider:
    * Amazon EC2
    * Microsoft Azure
