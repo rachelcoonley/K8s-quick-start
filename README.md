@@ -40,7 +40,7 @@ It only takes one command and a few minutes to install and launch Rancher Server
    ```bash
    $ sudo docker run -d --restart=unless-stopped -p 8080:8080 rancher/server:stable
    # Tail the logs to show Rancher
-   $ sudo docker logs -f 
+   $ sudo docker logs -f <CONTAINER_ID>
    ```
    After launching the container, we'll tail the logs of the container to see when the server is up and running. When the Rancher UI is ready, a `Startup Succeeded, Listening on port` message displays. This process might take several minutes to complete.
 
